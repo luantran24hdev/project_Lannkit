@@ -1,0 +1,36 @@
+
+@media screen and (max-width:1023px){ 
+    .wp-inner {
+        width: 100%;
+        position: relative;
+    }
+    
+   
+}
+
+
+
+
+
+@media screen and (max-width:420px){ 
+    .logo {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    .nav {
+        display: none;
+    }
+    .button {
+        display: none;
+    }
+    .content1-title p{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+
+    }
+    .content1-desc>p{
+        text-align: center;
+        width: 100%;
+    }
+}
