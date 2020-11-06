@@ -19,108 +19,49 @@
     <div id="wrapper">
         
 
-        <header>
-
-            
-
-            <div class="wp-inner flex">
+    <header>
+    
+        <div class="row">
+    
+            <div class="twelve columns">
+    
                 <div class="logo">
-                    Landkit.
+                    <a href="index.html"><img alt="" src='/images/brand.svg'></a>
                 </div>
-                <!-- reponsive Header -->
-
-                <label for="nav_input-mobile" class="nav-overlay"></label>
-                <label for="nav_input-mobile" class="bars">
-                    <i class="fas fa-bars"></i>
-                </label>
-
-                <input type="checkbox" class="parent-ss" id="nav_input-mobile">
-
-                
-
-                <div class="nav flex">
-                    <ul class="menu flex">
-                        <li> <a href="">Landings</a> 
-                            <ul class="sub-menu">
-                                <li><img src="" alt=""></li>
-                                <li>
-                                    <ul class="sub-menu">
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="sub-menu">
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                        <li>ServCss</li>
-                                    </ul>
-                                </li>
+    
+                <nav id="nav-wrap">
+    
+                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+    
+                    <ul id="nav" class="nav">
+    
+                        <li><a href="index.htm">Landings</a></li>
+                        <li><span><a href="blog.html">Pages</a></span>
+                            <ul>
+                                <li><a href="blog.html">Account</a></li>
+                                <li><a href="single.html">Post</a></li>
                             </ul>
                         </li>
-                        <li><a href="">Pages</a>
-                            <ul class="sub-menu">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-
-                        </li>
-                        <li><a href="">Account</a>
-                            <ul class="sub-menu">
-                                <li>Setting
-                                    <li>General</li>
-                                    <li>Security</li>
-                                    <li>Notications</li>
-                                    <li>Plan</li>
-                                    <li>Users</li>
-                                </li>
-                                <li>Sign in
-                                    <li>General</li>
-                                    <li>Security</li>
-                                    <li>Notications</li>
-                                    <li>Plan</li>
-                                    <li>Users</li>
-                                </li>
-                                <li>Sign up
-                                    <li>General</li>
-                                    <li>Security</li>
-                                    <li>Notications</li>
-                                    <li>Plan</li>
-                                    <li>Users</li>
-                                </li>
-                                <li>Password Reset
-                                    <li>General</li>
-                                    <li>Security</li>
-                                    <li>Notications</li>
-                                </li>
-                                <li>Error
-                                    <li>General</li>
-                                    <li>Security</li>
-                                    <li>Notications</li>
-                                </li>
+                        <li><span><a href="portfolio-index.html">DocumentStation</a></span>
+                            <ul>
+                                <li><a href="portfolio-index.html">Portfolio Index</a></li>
+                                <li><a href="portfolio.html">Portfolio Entry</a></li>
                             </ul>
                         </li>
-                        <li><a href="">DocumentStation</a></li>
-                    </ul>
-                </div>
-              
-                <div class="button">
-                    <a href="">Buy now</a>
-                </div>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+    
+    
+                    </ul> <!-- end #nav -->
+    
+                </nav> <!-- end #nav-wrap -->
+    
             </div>
-        </header>
+    
+        </div>
+    
+    </header> <!-- Header End -->
         <div id="wp-main-content" class="wp-inner">
             <div class="content-1 flex">
                 <div class="content-1-left">
@@ -132,12 +73,12 @@
                         <p>Build a beautiful, modern website with flexible Bootstrap components built from scratch.</p>
                     </div>
                     <div class="content1-button flex">
-                        <div class="view-in-page">
-                            <a href="">View all Pages</a>
-                        </div>
-                        <div class="document">
-                            <a href="">Document</a>
-                        </div>
+                        <a class="view-in-page" href="">
+                            View all Pages
+                        </a>
+                        <a class="view-in-page" href="">
+                            Documents
+                        </a>
                     </div>
                 </div>
                 <div class="content-1-right">
@@ -151,7 +92,7 @@
                             <div class="toggle">
                                 <!-- <i class="fas fa-toggle-on"></i>
                                 <i class="fas fa-toggle-off"></i> -->
-                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <g fill="none" fill-rule="evenodd">
                                         <path d="M0 0h24v24H0z"></path>
                                         <path d="M7 3h10a4 4 0 110 8H7a4 4 0 110-8zm0 6a2 2 0 100-4 2 2 0 000 4z" fill="#335EEA"></path>
@@ -257,18 +198,17 @@
                     </svg>
                 </div>
             </div>
-            <div class="content-4 flex clearfix">
-                <div class="main-content-4">
-                    <div class="form-img">
+            <div class="content-4 flex">
+               <div class="form-img">
                         <img src="images/img-3.jpg" alt="">
-                    </div>
-                    <form class="form1" action="">
-                        <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Password">
-                        <div class="button-dowload"><a href="">Dowload a sample</a></div>
-                    </form>
+                        <form class="form1" action="">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Password">
+                            <div class="button-dowload"><a href="">Dowload a sample</a></div>
+                        </form>
                 </div>
+                    
                 
                 <div class="side-bar-4">
                     <div class="item-sidebar-4">
@@ -280,26 +220,28 @@
                             Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our
                             ever-growing library of components and pre-designed layouts will make your life easier.
                         </div>
-                        <ul class="side-bar-list ">
-                           <div class="list-check flex">
-                            <div class="row1">
+                        <div class="col1 flex">
+                            <ul class="side-bar-list ">
                                 <li><i class="fa fa-check" aria-hidden="true"></i> LifeTime update</li>
                                 <li><i class="fa fa-check" aria-hidden="true"></i> Tons of assets</li>
                             
-                            </div>
-                            <div class="row2">
+                            
+                            </ul>
+                            <ul class="side-bar-list ">
                                 <li><i class="fa fa-check" aria-hidden="true"></i> Tech support</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Integration ready</li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i>Integration ready</li>
                             
-                            </div>
                             
-                           
-                           </div>
+                            </ul>
+                        </div>
+                       
                             
                     </div>
                 </div>
             </div>
-            <div class="content-5 clearfix">
+
+
+            <div class="content-5 flex">
                 <div class="content-5-main">
                     <div class="content-5-title">
                         <p>We have lots of experience</p>
@@ -360,6 +302,8 @@
                     </div>
                 </div>
             </div>
+
+           
 
             <div class="ct-6">
                 <div class="ct-6-title">
@@ -496,9 +440,68 @@
                 </div>
             </div>
            </div>
-           
 
-            
+           <!-- end ct-9 -->
+        
+        </div>
+        <footer>
+            <footer class="ft-head wp-inner">
+                <div class="ft-item flex">
+                    <div class="dot"><span>?</span></div>
+                    <div class="ft-list">
+                        <h2>Can I use Landkit for my clients?</h2>
+                        <p>Absolutely. The Bootstrap Themes license allows you to build a website for personal use or for a client.</p>
+                    </div>
+                </div>
+                <div class="ft-item flex">
+                    <div class="dot"><span>?</span></div>
+                    <div class="ft-list">
+                        <h2>Can I use Landkit for my clients?</h2>
+                        <p>Absolutely. The Bootstrap Themes license allows you to build a website for personal use or for a client.</p>
+                    </div>
+                </div>
+                
+            </footer>
+        </footer>
+    </div>
+        
+        
+        <div class="ct-11">
+                <div class="ct-clone">
+                    <div class="ct-11-content">
+                        <div class="button-ct">
+                            <a href="">GET STARTED</a>
+                        </div>
+                        <div class="ct-11-title">
+                            <h1>Get Landkit and save your time.</h1>
+                        </div>
+                        <div class="ct-11-desc">
+                            <p>Stop wasting time trying to do it the "right way" and build a site from scratch.</p>
+                            <p>Landkit is faster, easier, and you still have complete control.</p>
+                        </div>
+                        <div class="buy-now">
+                            <span>Buy Now <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="ct-12">
+            <div class="item">
+                <div class="logo-item">
+                    <img src="images/brand.svg" alt="">
+                </div>
+                <div class="footer-desc">
+                    <p>A better way to build.</p>
+                </div>
+                <div class="sosial">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-email"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
             
         </div>
 

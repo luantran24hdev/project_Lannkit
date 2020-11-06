@@ -1,0 +1,461 @@
+
+
+/* 
+
+- 1024
+- 768
+- 480
+
+
+
+
+*/
+
+@media screen and (max-width:1239px){ 
+    .wp-inner {
+        width: 1024px;   
+    }   
+    .content-5 {
+        width: 100%;
+        display: flex;
+        
+    }
+
+    .content-5-main {
+        /* width: 100%; */
+        max-width: 400px;
+        
+    }
+    .content-5-sidebar {
+        /* width: 100%; */
+        max-width: 400px;
+        margin-left: 100px;
+    }
+
+}
+
+/*  laptop */
+@media screen and (max-width:1039px){ 
+    .wp-inner {
+        width: 960px;   
+    }   
+
+
+     .content-5-sidebar {
+        /* width: 100%; */
+        
+        margin-left: 40px;
+    }
+    .content1-title {
+        font-size: 28px;
+    }
+    .content-1-right img{
+        width: 500px;
+    }
+}
+
+
+/* nhỏ hơn 1023 và lớn hơn 768 */
+@media screen and (min-width:768px) and (max-width:1039px){ 
+    .wp-inner {
+        width: 100%;
+    }   
+    .ct-clone {
+        width: 100%;
+        flex-direction: column; 
+    }
+    .carousel  {
+        width: 100%;
+        padding-left: 70px;
+    }
+    .images-carousel {
+        width: 400px;
+    }
+    .images-carousel a img {
+        width: 390px;
+       border-radius: 5px;
+    }
+    .right-carousel {
+        width: 300px;
+    }
+    #wrapper {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .ct-10-item {
+        width: 100%;
+        padding-left: 200px;
+    }
+    .ct-7 {
+        width: 100%;
+    }
+    .ct-7-right img {
+    width: 400px;
+}
+    @media screen and (max-width: 980px){ 
+        .cr-desc {
+            width: 300px;
+        }
+        .content-5 {
+            width: 100%;
+        }
+        .ct5-img img {
+            width: 400px;
+        }
+        .ct-7-right img {
+    max-width: 300px;
+}
+    }
+
+}
+@media screen and (max-width: 930px){ 
+
+    .view-in-page {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 892px){ 
+    .view-in-page {
+   
+    margin-right: 25px;
+}
+.row1 {
+    margin-right: 45px;
+}
+}
+
+@media screen and (max-width: 879px){
+    .ct5-img img {
+    width: 300px;
+}
+
+@media screen and (max-width: 860px){
+    .wp-item {
+        flex-direction: column;
+    }
+    .item {
+        width: 50%;
+        margin-bottom: -140px;
+    }
+}
+
+
+
+}
+
+
+
+
+/* mobile first */
+@media screen and (max-width: 480px){ 
+    .logo {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    .nav {
+        display: none;
+    }
+    .button {
+        display: none;
+    }
+    .content1-title p{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+
+    }
+    .content1-desc>p{
+        text-align: center;
+        width: 100%;
+    }
+
+    .content-1 {
+        flex-direction: column;
+    }
+    .content-1-left {
+        order: 2;
+        width: 100%;
+
+        
+    }
+
+    .content1-title, .content1-desc {
+        width: 320px;
+        padding-left: 22px;
+    }
+    .content-1-right {
+        order: 1;
+        width: 350px;
+    margin-left: 15px;
+       
+    }
+    .content-1-right img {
+       width: 100%;
+    }
+
+    .content1-button {
+        width: 50%;
+        display: none;
+    }
+
+  .view-in-page {
+      
+  }
+
+  .item {
+         width: 300px;
+    /* margin: auto 30px; */
+    /* padding-top: 40px; */
+    padding: auto 30px;
+    margin-left: 10px;
+      
+
+  }
+  .item:nth-child(2){
+          margin-top: -90px;
+  }
+  .item:nth-child(3){
+        
+            margin-top: -90px;
+      
+  }
+  .wp-item {
+      flex-direction: column;padding-top: 40px;
+      
+  }
+
+  .content-2 {
+      width: 100%;
+  }
+  .content-2-desc {
+      width: 340px;
+      
+  }
+
+  .content-3 {
+      width: 100%;
+      margin-top: -100px;
+  }
+  .icon-item {
+      width: 100%;
+  }
+
+    .content-4 {
+        flex-direction: column;
+        width: 100%;
+        margin-top: -50px;
+
+    }
+    .side-bar-4 {
+        order: 1;
+        margin-left: -80px;
+    }
+    .main-content-4 {
+        order: 2;
+    }
+  .title-sidebar p {
+      font-size: 24px;
+      
+  }
+
+  .title-sidebar p.color  {
+      font-size: 24px;
+  }
+  .sidebar-desc {
+    font-size: 16px;
+    width: 300px;
+  }
+
+  .side-bar-list {
+      width: 100%;
+      
+  }
+  .list-check {
+      margin-top: -40px;
+      flex-direction: column;
+  }
+
+  .form-img img{
+    width: 340px;
+    margin-left: 20px;
+  }
+
+  .content-5 {
+      width: 100%;
+      /* margin-top: -10px; */
+  }
+  .content-5-main {
+      margin-top: -70px;
+      display: block;
+      width: 100%;
+  }
+
+  .content-5-sidebar {
+      width: 100%;
+  }
+  .content-5-title {
+      font-size: 24px;
+      margin-left: 25px;
+  }
+
+  .content-5-desc p{
+    font-size: 16px;
+    margin-left: 25px;
+  }
+
+  .offer {
+      margin-left: 13px;
+  }
+  .icon-right-title {
+    font-size: 19px;
+}
+.icon-right-desc {
+    font-size: 16px;
+    
+}
+.ct5-img img{
+    width: 300px;
+    margin-left: 20px;
+}
+
+
+/* end ct-5 */
+
+.carousel {
+    flex-direction: column;
+}
+
+.content-6 {
+    margin-top: 30px;
+}
+
+
+.ct-6 {
+    width: 100%;
+}
+.ct-6-title h2 {
+    font-size: 22px;
+}
+.ct-6-desc {
+    font-size: 18px;
+    padding: 0 5px;
+}
+.images-carousel {
+    width: 100%;
+}
+.images-carousel a img {
+    width: 340px;
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 20px;
+    height: 300px;
+}
+
+.right-carousel {
+    width: 100%;
+}
+.cr-desc {
+    margin-top: -20px;
+    margin-left: 25px;
+    width: 300px;
+}
+.cr-desc p {
+    line-height: 40px;
+}
+.cr-title svg{
+    width: 120px; 
+    
+}
+
+
+/* ct-7 */
+
+.ct-7 {
+    flex-direction: column;
+    width: 100%;
+}
+
+.ct-7-right {
+    width: 100%;
+    order: 1;
+}
+
+.ct-7-right {
+    flex: 320px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.ct-7-right img {
+    width:320px
+}
+.ct-7-left {
+    width: 100%;
+order: 2;
+}
+.ct-7-title,.ct-7-desc  {
+    width: 320px;
+    margin-left: 32px;
+}
+
+.ct-7-title  {
+    margin-top: -50px;
+}
+
+.ct-7-title p {
+    font-size: 20px;
+}
+
+.ct-7-item {
+    margin-left: 12px;
+}
+
+
+
+.ct-7-desc p {
+    font-size: 16px;
+}
+.flex-ct-7:nth-child(1) {
+    font-size: 22px;
+}
+.flex-ct-7:nth-child(2) {
+    font-size: 14px;
+}
+
+
+/* ct-8 */
+.ct-8 {
+    margin-top: -190px;
+    width: 100%;
+}
+.ct-8-title {
+    font-size: 28px;
+}
+.ct-8-desc  {
+        /* width: 100%; */
+    font-size: 15px;
+    width: 90%;
+}
+
+/* ct-9 */
+
+.ct-9 {
+    flex-direction: column;
+    width: 100%;
+}
+.ct-9-one {
+    width: 100%;
+}
+.ct-9-two{
+    width: 100%;
+}
+.ct-9-two-desc {
+    margin-top: -100px;
+    width: 300px;
+}
+
+
+
+
+
+}
