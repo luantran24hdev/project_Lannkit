@@ -493,17 +493,13 @@ input:hover {
     border-radius: 5px;
     
 }
-
-.button-dowload a{
-    line-height: 80px;
-    font-size: 1rem;
-    
-    padding: 15px 80px;
-    background: #42ba96;
-    color: white;
-    border-radius: 5px;
+.button-dowload {
+    text-align: center;
 }
 
+.button-dowload a {
+    color: white;
+}
 
 
 .side-bar-4 {
@@ -1090,4 +1086,19 @@ footer {
     font-size: 1rem;
     color:white;
     line-height: 20px;
+}
+.button-dowload {
+    text-align: center;
+    width: 100%;
+    border: none;
+    line-height: 50px;
+}
+
+.button-dowload {
+    text-align: center;
+    width: 100%;
+    border: none;
+    background: #42ba96;
+    
+    border-radius: 5px;
 }
