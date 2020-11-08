@@ -2,6 +2,15 @@
 
 
 @media only screen and (max-width: 1040px) { 
+    .container {
+        width: 80%;
+    }
+     .col-content .row-content .col .row {
+         flex-direction: column;
+     }
+     .col-logo {
+         padding-right: 5%;
+     }
     .wp-inner {
         width: 100%;
     }
@@ -72,11 +81,26 @@
 
 
     /* ct - 10 */
-
+    .body-ct-9 {
+            width: 80%;
+    margin: 0 auto;
+    }
+    .item-list {
+        font-size: 1rem;
+    }
+    .sumary-contact {
+        font-size: 1.3rem;
+    }
+    .list-sumary {
+        width: 80%;
+    }
 
 }
 
 @media only screen and (max-width: 900px) {
+    .col-logo {
+         padding-right: 10%;
+     }
      header .logo  { left: 36px; }
      a.view-in-page {
          font-size: 1rem;
@@ -96,6 +120,32 @@
     }
  
    @media only screen and (max-width: 770px) {
+       .row-footer {
+           flex-direction: column;
+        
+       }
+       .col-logo {
+           width: 100%;
+       }
+       .row {
+           flex-direction: column;
+       }
+       .form-group {
+        width: 100%;
+       }
+       .body-ct-9 {
+           flex-direction: column;
+       }
+       .answers .col {
+           width: 80%;
+           margin: 0 auto;
+       }
+       .ct-price {
+           width: 100%;
+       }
+       .ct-contact {
+           width: 100%;
+       }
        .wp-item {
            padding-left: 20%;
        }
@@ -455,6 +505,12 @@
     }
 
     @media only screen and (max-width: 480px) { 
+        .footer .col-content {
+            width: 100% !important;
+        }
+        .col {
+
+        }
          header .logo { z-index: 99999; }
 
    /* page content
@@ -498,7 +554,40 @@
 .content1-button  p {
     margin: 0 auto;
 }
+
+.ct-9-title {
+    font-size: 1.6rem;
+}
+.ct-9-desc {
+    font-size: 1rem;
+}
+.number {
+    font-size: 1rem;
+}
+.sumary-contact {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+.head-desc-buy {
+    font-size: 1.4rem;
+}
+.body-desc-buy {
+    font-size: 1rem;
+    margin: 0 auto;
+}
+.btn-buy {
+    width: 50%;
+    margin: 0 auto;
+}
    
     }
 
-   
+
+
+
+       @media only screen and (max-width: 370px) { 
+        .row-content {
+            flex-direction: column;
+        }
+       }
