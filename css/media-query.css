@@ -2,6 +2,135 @@
 
 
 @media only screen and (max-width: 1040px) { 
+
+
+    .header .header-btn {
+    background-color: #335eea;
+    border-radius: .375rem;
+    border-color: transparent;
+    padding: .5625rem 1rem;
+    margin-left: 5%;
+    }
+
+
+    /* header */
+
+    .header .menu .btn-close {
+        display: none;
+    }
+    .header .nav-link:hover {
+        color: #335eea;
+    }
+    .header .page-link:hover .nav-link {
+        color: #335eea;
+    }
+    .header .menu-btn {
+        display: none;
+    }
+    .header .menu ul li {
+        position: relative;
+    }
+    .header .dropdown-menu {
+        padding: 20px 20px;
+        border: 0 solid rgba(22,28,45,.15);
+        border-radius: .375rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(22,28,45,.1);
+        position: absolute;
+        background-color: #fff;
+        top: 110%;
+    }
+    .header .menu .form-menu {
+        display: flex;
+        width: 100%;
+    }
+    .header .landings {
+        display: flex;
+        width: 500%;
+        padding: 0;
+        display: none;
+        left: 0;
+        transform: translate(-40%, 0);
+    }
+    .header .landings .list-group {
+        display: flex;
+        width: 50%;
+        padding: 20px 20px 20px 0;
+    }
+    .header .documentation-link:hover > .documentation {
+        display: block;
+    }
+    .header .landings-link:hover > .landings {
+        display: block;
+        display: flex;
+    }
+    .header .page {
+        display: flex;
+        left: 0;
+        transform: translate(-40%, 0);
+        display: none;
+    }
+    .header .page .col-responsive {
+        display: flex;
+    }
+    .header .page-link:hover > .page {
+        display: block;
+        display: flex;
+    }
+    .header .account {
+        list-style-type: none;
+        width: 150%;
+        left: 0;
+        transform: translate(-20%, 0);
+        padding: 30px 0 30px 30px;
+        display: none;
+    }
+    /* Hover menu account */
+    .header .account-link:hover > .account {
+        display: block;
+    }
+    .header .account-link:hover .nav-link {
+        color: #335eea;
+    }
+    .header .account .menu-settings:hover .drop-settings {
+        display: block;
+    }
+    .header .account .menu-signin:hover .drop-signin {
+        display: block;
+    }
+    .header .account .menu-signup:hover .drop-signup {
+        display: block;
+    }
+    .header .account .menu-pass:hover .drop-pass {
+        display: block;
+    }
+    .header .account .menu-error:hover .drop-error {
+        display: block;
+    }
+    .header .account .dropdown-menu2 {
+        position: absolute;
+        list-style-type: none;
+        border: 0 solid rgba(22,28,45,.15);
+        border-radius: .375rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(22,28,45,.1);
+        background: #fff;
+        padding: 30px;
+        top: -30px;
+        left: 100%;
+        width: 100%;
+    }
+    .header .account .dropdown-item {
+        padding-bottom: 6px;
+        position: relative;
+        padding-right: 30px;
+    }
+    .header .documentation {
+        padding: 30px 20px;
+        width: 200%;
+        left: 0;
+        transform: translate(-30%, 0);
+        display: none;
+    }
+    /* end header */
     .container {
         width: 80%;
     }
@@ -94,10 +223,27 @@
     .list-sumary {
         width: 80%;
     }
-
+   
 }
 
 @media only screen and (max-width: 900px) {
+    .icon-pre-left {
+    top: 40%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    }
+    .icon-pre-right {
+    top: 40%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    }
+    #nav_bars-btn  {
+        display: block;
+    }
+     #menu {
+        display: none;
+    }
+
     .col-logo {
          padding-right: 10%;
      }
@@ -120,6 +266,16 @@
     }
  
    @media only screen and (max-width: 770px) {
+       .icon-pre-left {
+    top: 25%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    }
+    .icon-pre-right {
+    top: 25%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    }
        .row-footer {
            flex-direction: column;
         
@@ -505,6 +661,16 @@
     }
 
     @media only screen and (max-width: 480px) { 
+         .icon-pre-left {
+    top: 15%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    }
+    .icon-pre-right {
+    top: 15%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    }
         .footer .col-content {
             width: 100% !important;
         }
