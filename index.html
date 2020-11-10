@@ -775,12 +775,15 @@
 
 
                         <!-- forrm jquery -->
-                        <form name="myForm" class="form1">
+                        <form name="myForm" class="form1"> 
                             <input type="text" name="name" id="name" placeholder="Name" >
+                            <span class="validate" id="validate-name"></span>
                             <!-- <input type="text" name="email" id="email" placeholder="Email"> -->
                             <input type="text" name="password" id="password" placeholder="Password" >
+                            <span class="validate" id="validate-password"></span>
                         
-                            <button  type="submit">Dowload a sample</button>
+                            <button class="download-button" type="submit">Dowload a sample</button>
+                            <span class="validate-success" id="validate-success"></span>
                         </form>
                         <!-- end form jquery -->
 

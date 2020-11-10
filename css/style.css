@@ -2190,7 +2190,12 @@ form .error {
 .article-reference a {
   color: #e67e22;
 }
-
+#validate-name {
+        color: #ff0000;
+}
+#validate-password {
+        color: #ff0000;
+}
 
 
 
