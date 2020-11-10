@@ -13,7 +13,8 @@
         rel="stylesheet">
         <!-- Important Owl stylesheet -->
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 </head>
 <body>
     <section class="header">
@@ -441,9 +442,16 @@
             <div class="menu-btn">
                
             </div>
-            <div onclick="myToggle()"  id="nav_bars-btn">
+            <!-- javascript -->
+            <!-- <div onclick="myToggle()"  id="nav_bars-btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div> -->
+            <!-- end javascript -->
+            <!-- jquery -->
+            <div id="nav_bars-btn">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
+            <!-- end jquery -->
            
             <div id="form-menu-mobile">
                  <!-- nav mobile reponsive -->
@@ -593,9 +601,19 @@
                     </div>
                 </div>
                  <!-- end nav mobile reponsive -->
-                    <label onclick="myToggle()" for="nav-input" class="close-tab">
+
+                 <!-- javascript -->
+                    <!-- <label onclick="myToggle()" for="nav-input" class="close-tab">
+                        <label for="nav-input" class="fa fa-times" aria-hidden="true"></label>
+                    </label> -->
+                    <!-- end javascript -->
+
+
+                    <!-- jquery -->
+                    <label for="nav-input" class="close-tab">
                         <label for="nav-input" class="fa fa-times" aria-hidden="true"></label>
                     </label>
+                    <!-- end jqeury -->
                 </div>
         </div>
     </div>
@@ -740,7 +758,9 @@
             <div class="content-4 flex">
                <div class="form-img">
                         <img src="images/img-3.jpg" alt="">
-                        <form name="myForm" action="" method="post" class="form1"
+
+                        <!-- forrm javascript -->
+                        <!-- <form name="myForm" action="" method="post" class="form1"
                         onclick="validateForm()">
                             <input type="text" placeholder="Name" name="name">
                             <p id="nameloc"></p>
@@ -749,7 +769,24 @@
                             <input type="text" placeholder="Password" name="password">
                             <p id="passwordloc"></p>
                         <div class="button-dowload" value="submit"><a href="" value="submit">Dowload a sample</a></div>
+                        </form> -->
+                        <!-- end form javascript -->
+
+
+
+                        <!-- forrm jquery -->
+                        <form name="myForm" class="form1">
+                            <input type="text" name="name" id="name" placeholder="Name" >
+                            <!-- <input type="text" name="email" id="email" placeholder="Email"> -->
+                            <input type="text" name="password" id="password" placeholder="Password" >
+                        
+                            <button  type="submit">Dowload a sample</button>
                         </form>
+                        <!-- end form jquery -->
+
+
+
+                       
                         
                 </div>
                     
@@ -1377,6 +1414,11 @@
 
 
 <!-- test form  -->
+<button id="action-button">Click me to load info!</button>
+<div id="info"></div>
+
+<small>Demo created by <a href="https://twitter.com/AurelioDeRosa">Aurelio De Rosa</a></small>
+
 
 
 
@@ -1384,4 +1426,6 @@
 
 </body>
 <script src="js/myscript.js"></script>
+<script src="js/custom-jquery.js"></script>
+<script src="js/jquery-validate.js"></script>
 </html>

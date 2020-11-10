@@ -2160,4 +2160,37 @@ p#passwordloc span {
 
 
 
+form input,
+form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+
+
+form button {
+  height: 50px;
+  line-height: 30px;
+  background: #42ba96;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+form .error {
+  color: #ff0000;
+}
+
+.article-reference {
+  margin-top: 15px;
+}
+.article-reference a {
+  color: #e67e22;
+}
+
+
+
 
