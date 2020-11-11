@@ -83,66 +83,66 @@
 //     }
 
 // // call api ajax
-// // const login = async ({ email = "", password = "" }) => {
-// //     try {
+// const login = async ({ email = "", password = "" }) => {
+//     try {
 		
-// // 			let data = {
-// // 				email: email,
-// // 				password: password
-// // 			};
+// 			let data = {
+// 				email: email,
+// 				password: password
+// 			};
 
-// //             var resultLogin = await fetch("http://localhost:3001/api/login", data);
-// //             console.log(resultLogin)
+//             var resultLogin = await fetch("http://localhost:3001/api/login", data);
+//             console.log(resultLogin)
 
-// //             let json = await resultLogin.json();
-// //                 // resolve(json);
-// //                 console.log(json)
+//             let json = await resultLogin.json();
+//                 // resolve(json);
+//                 console.log(json)
 
-// // 			if (resultLogin.data.status === 200) {
-// // 				return {
-// // 					ok: true,
-// // 					data: resultLogin.data
-// // 				};
-// // 			} else {
-// // 				return {
-// // 					ok: false,
-// // 					error: 'status not 200'
-// // 				};
-// // 			}
+// 			if (resultLogin.data.status === 200) {
+// 				return {
+// 					ok: true,
+// 					data: resultLogin.data
+// 				};
+// 			} else {
+// 				return {
+// 					ok: false,
+// 					error: 'status not 200'
+// 				};
+// 			}
 
-// // 			//console.log("resultLogin =", resultLogin);
-// // 		} catch (error) {
-// // 			return {
-// // 				ok: false,
-// // 				error: 'Sai api'
-// // 			};
-// // 		}
+// 			//console.log("resultLogin =", resultLogin);
+// 		} catch (error) {
+// 			return {
+// 				ok: false,
+// 				error: 'Sai api'
+// 			};
+// 		}
 
-// // }
+// }
 
 
-// // $(document).ready(function(){
-// //     // tao event truyen actions vao 
-// //   $("form[name='myForm']").click(function(e){
-// //         // console.log('this.userAction = ',this.userAction);
-// //         // lay du lieu tu o input bang javascript 
-// //         e.preventDefault();
-// //             var name = document.myForm.name.value;
-// //             var password = document.myForm.password.value;
-// //             // var email = document.myForm.email.value;
+// $(document).ready(function(){
+//     // tao event truyen actions vao 
+//   $("form[name='myForm']").click(function(e){
+//         // console.log('this.userAction = ',this.userAction);
+//         // lay du lieu tu o input bang javascript 
+//         e.preventDefault();
+//             var name = document.myForm.name.value;
+//             var password = document.myForm.password.value;
+//             // var email = document.myForm.email.value;
 
-// //             console.log('name = ',name);
-// //             console.log('password = ',password);
-// //             // console.log('email = ',email);
-// //             let data = {
-// //                 username:name,
-// //                 password:password
-// //             }
-// //             login(data).then(res=>{
-// //                 console.log(res)
-// //             })
+//             console.log('name = ',name);
+//             console.log('password = ',password);
+//             // console.log('email = ',email);
+//             let data = {
+//                 username:name,
+//                 password:password
+//             }
+//             login(data).then(res=>{
+//                 console.log(res)
+//             })
 
-// //   });
+//   });
 
 
 
@@ -161,7 +161,7 @@ $(document).ready(() => {
     if ($("#name").val().trim() === "") {
       $("#validate-name").show();
       $("#validate-name").html("Vui lòng nhập tên đăng nhập  !");
-    }else if ($("#name").val().trim() && $("#name").val().trim().length < 8){
+    }else if ($("#name").val().trim() && $("#name").val().trim().length < 3){
          $("#validate-name").show();
       $("#validate-name").html("Tên đăng nhập quá ngắn!");
     } 
@@ -178,7 +178,9 @@ $(document).ready(() => {
       $("#validate-name").html("Mật khẩu quá ngắn!");
     }  else $("#validate-password").hide();
 
-    // On Submit
+
+
+    //  Submit
     if (
       $("#name").val().trim() &&
       $("#password").val().trim().length >= 8
@@ -191,23 +193,31 @@ $(document).ready(() => {
         $("#password").val().trim()
       );
       $(".download-button").attr("disabled", true);
+
+    //     setTimeout(data , 5000); 
       $.post("http://localhost:3001/api/login", {
         username: $("#name").val().trim(),
         password: $("#password").val().trim(),
       })
+
+
+
+
         .done((data) => {
           console.log(data);
+          
           $("#validate-success").show();
+          $("#validate-success").html('Đăng nhập thành công .');
           $("#validate-fail").hide();
-          $("#validate-success").html(data.message);
+        //   $("#validate-success").html(data.message);
+          $("#login-succes").show();
+
           $(".download-button").attr("disabled", false);
         })
         .fail((xhr, status, error) => {
           $("#validate-success").hide();
           $("#validate-fail").show();
-          $("#validate-fail").html(
-            xhr.responseJSON.error || xhr.responseJSON.message
-          );
+          $("#validate-fail").html('Tên tài khoản hoặc mật khẩu không hợp lệ!');
           console.log(xhr, status, error);
           $(".download-button").attr("disabled", false);
         });
@@ -216,3 +226,8 @@ $(document).ready(() => {
 
   
 });
+
+
+
+
+
