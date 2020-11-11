@@ -165,7 +165,11 @@ $(document).ready(() => {
          $("#validate-name").show();
       $("#validate-name").html("Tên đăng nhập quá ngắn!");
     } 
-     else $("#validate-name").hide();
+     else {
+         $("#validate-name").hide();
+         $("#ok-name").show();
+         
+     }
 
 
 
@@ -176,7 +180,11 @@ $(document).ready(() => {
     }else if ($("#password").val().trim().length < 8){
          $("#validate-name").show();
       $("#validate-name").html("Mật khẩu quá ngắn!");
-    }  else $("#validate-password").hide();
+    } else {
+         $("#validate-password").hide();
+         $("#ok-name").show();
+         
+     }
 
 
 
@@ -194,20 +202,18 @@ $(document).ready(() => {
       );
       $(".download-button").attr("disabled", true);
 
-    //     setTimeout(data , 5000); 
+         
       $.post("http://localhost:3001/api/login", {
         username: $("#name").val().trim(),
         password: $("#password").val().trim(),
+        
       })
-
-
-
 
         .done((data) => {
           console.log(data);
           
           $("#validate-success").show();
-          $("#validate-success").html('Đăng nhập thành công .');
+          $("#validate-success").html('Đăng nhập tài khoản thành công.');
           $("#validate-fail").hide();
         //   $("#validate-success").html(data.message);
           $("#login-succes").show();

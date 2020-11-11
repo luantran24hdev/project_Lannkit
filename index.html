@@ -775,13 +775,14 @@
 
 
                         <!-- forrm jquery -->
-                        <form name="myForm" class="form1"> 
+                        <form name="myForm" class="form1" method="POST"> 
                             <input type="text" name="name" id="name" placeholder="Name" >
                             <span class="validate" id="validate-name"></span>
-                            <!-- <input type="text" name="email" id="email" placeholder="Email"> -->
+                            
+                            <input type="text" name="email" id="email" placeholder="Email">
                             <input type="text" name="password" id="password" placeholder="Password" >
                             <span class="validate" id="validate-password"></span>
-                        
+                          
                             <button class="download-button" type="submit">Dowload a sample</button>
                             <span class="validate-success" id="validate-success"></span>
                             <span class="validate-fail" id="validate-fail"></span>
@@ -799,7 +800,13 @@
                     <div class="item-sidebar-4">
                         <div class="title-sidebar">
                             <p>The most useful resource</p>
-                            <p class="color">ever created for Deverlopers</p>
+                            <!-- <p class="color" data-period="2000" data-type='[ "ever created for Deverlopers" ]'></p> -->
+                            <h1>
+                                <a style="color: #42ba96;" href="" class="typewrite" data-period="2000" data-type='["ever created for Deverlopers."]'>
+                                    <span class="wrap"></span>
+                                </a>
+                            </h1>
+                            <p></p>
                         </div>
                         <div class="sidebar-desc">
                             Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our
@@ -1417,8 +1424,11 @@
     </section>
 
 
+
+    
+
 <!-- test form  -->
-<button onclick="topFunction()" id="myBtn"><i class="fas fa-angle-double-up"></i></button>
+<button onclick="scrollFunction()" id="myBtn"><i class="fas fa-angle-double-up"></i></button>
 
 
 
