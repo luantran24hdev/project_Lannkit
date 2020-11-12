@@ -174,19 +174,17 @@ $(document).ready(() => {
 
 
 
-    if ($("#password").val().trim().length < 8) {
+    if ($("#password").val().trim() === '') {
       $("#validate-password").show();
       $("#validate-password").html("Vui lòng nhập mật khẩu!");
     }else if ($("#password").val().trim().length < 8){
-         $("#validate-name").show();
-      $("#validate-name").html("Mật khẩu quá ngắn!");
+         $("#validate-password").show();
+      $("#validate-password").html("Mật khẩu quá ngắn!");
     } else {
          $("#validate-password").hide();
          $("#ok-name").show();
          
      }
-
-
 
     //  Submit
     if (
@@ -203,29 +201,51 @@ $(document).ready(() => {
       $(".download-button").attr("disabled", true);
 
          
-      $.post("http://localhost:3001/api/login", {
+      $.post("http://localhost:3001/api/login", 
+      
+      {
+
         username: $("#name").val().trim(),
         password: $("#password").val().trim(),
+
+        
         
       })
 
-        .done((data) => {
-          console.log(data);
+        .done((res) => {
+        
+          setTimeout(() => {
+              console.log('res = ',res);
+          }, 5000);
           
-          $("#validate-success").show();
-          $("#validate-success").html('Đăng nhập tài khoản thành công.');
-          $("#validate-fail").hide();
-        //   $("#validate-success").html(data.message);
-          $("#login-succes").show();
+         setTimeout(() => {
+                 $("#validate-success").show();
+                $("#validate-success").html('Đăng nhập tài khoản thành công.');
+                $("#validate-fail").hide();
+                //   $("#validate-success").html(data.message);
+                $("#login-succes").show();
 
-          $(".download-button").attr("disabled", false);
+               
+                }, 4000);
+                 setTimeout(() => {
+                        $(".download-button").hide();
+                }, 1000);
+
+                if(res.status === 200){
+                   setTimeout(() => {
+                        $(".download-button").show();
+                }, 5000);
+
+                }
         })
         .fail((xhr, status, error) => {
-          $("#validate-success").hide();
-          $("#validate-fail").show();
-          $("#validate-fail").html('Tên tài khoản hoặc mật khẩu không hợp lệ!');
-          console.log(xhr, status, error);
-          $(".download-button").attr("disabled", false);
+            setTimeout(() => {
+                     $("#validate-success").hide();
+                    $("#validate-fail").show();
+                    $("#validate-fail").html('Tên tài khoản hoặc mật khẩu không hợp lệ!');
+                    console.log(xhr, status, error);
+                    $(".download-button").attr("disabled", false);
+            }, 4000);
         });
     }
   });
